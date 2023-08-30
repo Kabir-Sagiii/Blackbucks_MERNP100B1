@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function createButton() {
+        var btnRef = document.createElement("button");
+        var imgRef = document.createElement("img"); // <img />
+
+        imgRef.src =
+          "https://lirp-cdn.multiscreensite.com/56b07a9c/dms3rep/multi/opt/g3-1920w.jpg"; //<img src="" />
+
+        imgRef.width = "300"; //<img src="" width="300" />
+
+        imgRef.height = "300"; //<img src="" width="300" height="300" />
+
+        imgRef.style.margin = "20px";
+        imgRef.style.boxShadow = " 0 0 10px black";
+
+        btnRef.innerText = "Javascript Button";
+
+        var bodyRef = document.getElementById("body");
+
+        // bodyRef.appendChild(btnRef);
+        bodyRef.appendChild(imgRef);
+      }
+    </script>
+  </head>
+  <body id="body">
+    <h2>DOM Element</h2>
+    <button onclick="createButton()">HTML Button</button><br /><br />
+  </body>
+</html>

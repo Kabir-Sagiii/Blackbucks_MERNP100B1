@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function changeContent() {
+        // Taking the reference of h2 element and
+        var h2Ref = document.getElementById("title");
+        var pRef = document.getElementById("p1");
+
+        //changing the content of h2 element
+        h2Ref.innerText = "DOM Manipulated using Javascript";
+        h2Ref.style.color = "red";
+        h2Ref.style.backgroundColor = "black";
+        h2Ref.style.padding = "20px";
+
+        pRef.innerText =
+          "DOM looks very easy now, It is little interesting to Know About Javascript and DOM";
+      }
+    </script>
+  </head>
+  <body>
+    <h2 id="title">DOM</h2>
+
+    <p id="p1">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet,
+      perferendis consequuntur minus eum earum, autem maxime dolorem deleniti
+      impedit voluptatibus corrupti amet, debitis et veritatis? Facilis itaque
+      inventore tempore molestias totam consequatur animi reprehenderit eveniet,
+      magni voluptas ab unde sapiente nihil eos corrupti? Aliquam,
+      necessitatibus. Dolorem dignissimos sunt sapiente error assumenda libero
+      explicabo, deserunt alias pariatur nihil. Ab magni laboriosam consectetur
+      ipsam autem eos voluptatibus. Ipsum debitis distinctio aperiam commodi
+      inventore, repudiandae doloribus sit et laboriosam. Eligendi nam
+      voluptatem culpa maiores maxime! Inventore quibusdam dolorem, consectetur
+      quasi tempore aspernatur sed ratione praesentium vero error veritatis sint
+      sequi iusto voluptates distinctio.
+    </p>
+
+    <button onclick="changeContent()">Change Content</button>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function fnChange() {
+        var h2 = document.getElementById("title");
+        var p = document.getElementById("para");
+
+        h2.innerText = "DOM is Manipulated Successfully using Javascript";
+        p.innerText =
+          "Welcome to the MDN beginner's JavaScript course! In this article we will look at JavaScript from a high level, answering questions such as What is it? and What can you do with it?, and making sure you are comfortable with JavaScript's purpose.";
+      }
+    </script>
+  </head>
+  <body>
+    <h2 id="title">DOM</h2>
+    <p id="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error omnis earum
+      dicta tenetur assumenda laboriosam ab nostrum possimus amet ipsum dolorum,
+      veritatis officia hic pariatur quasi natus ullam sit? Eos.
+    </p>
+    <button onclick="fnChange()">Change Content</button>
+  </body>
+</html>
