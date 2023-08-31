@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function createh2() {
+        var h2Ref = document.createElement("h2");
+        var btnRef = document.createElement("button");
+        var pRef = document.createElement("p");
+
+        h2Ref.innerText = "h2 element is created using Javascript";
+        h2Ref.style.backgroundColor = "black";
+        h2Ref.style.color = "white";
+        h2Ref.style.padding = "30px";
+        h2Ref.style.width = "500px";
+
+        btnRef.innerText = "Delete";
+
+        btnRef.onclick = function () {
+          h2Ref.remove();
+          btnRef.remove();
+          pRef.remove();
+        };
+
+        pRef.innerHTML =
+          "<b><i>This is my Paragraph. It should contain some 200 to 500 words</i></b>";
+
+        var bodyRef = document.getElementById("body");
+        bodyRef.appendChild(h2Ref);
+        bodyRef.appendChild(pRef);
+        bodyRef.appendChild(btnRef);
+      }
+    </script>
+  </head>
+  <body id="body">
+    <h1>Creating h2 element using Javascript</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit,
+      inventore id? Doloremque numquam tempora molestias asperiores placeat
+      praesentium a saepe accusamus, eveniet excepturi aut suscipit, debitis et
+      enim totam accusantium dolorem quam vero sunt voluptatem nemo, ducimus
+      ratione! Error, ab. Dolore architecto distinctio facilis nulla sint, optio
+      impedit error culpa.
+    </p>
+    <button onclick="createh2()">Create h2</button>
+  </body>
+</html>
