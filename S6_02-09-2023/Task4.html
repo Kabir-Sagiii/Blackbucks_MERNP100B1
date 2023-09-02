@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      var container = (
+        <div>
+          <h2>React looks like html</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
+            debitis totam provident tenetur molestias delectus expedita. Nobis
+            sit numquam ratione!
+          </p>
+        </div>
+      );
+
+      ReactDOM.render(container, document.getElementById("root"));
+    </script>
+  </body>
+</html>

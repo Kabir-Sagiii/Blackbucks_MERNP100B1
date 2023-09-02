@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #card {
+        width: 300px;
+        box-shadow: 0 0 10px black;
+        padding: 10px;
+      }
+    </style>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function createUser() {
+        return (
+          <div id="card">
+            <img
+              src="https://i.pinimg.com/originals/97/31/02/9731022f0be7c965e880505461643850.jpg"
+              width="300"
+              height="300"
+            />
+            <h2>Rajiv Mehta</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam
+              numquam suscipit amet provident minus voluptas placeat quas,
+              veniam laborum nisi!
+            </p>
+            <button>Profile</button>
+          </div>
+        );
+      }
+
+      ReactDOM.render(createUser(), document.getElementById("root"));
+    </script>
+  </body>
+</html>

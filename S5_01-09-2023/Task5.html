@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      var olRef = React.createElement("ol", null, [
+        React.createElement("li", null, "React JS"),
+        React.createElement("li", null, "NodeJS"),
+        React.createElement("li", null, "Express JS"),
+        React.createElement("li", null, "MongoDB"),
+      ]);
+
+      ReactDOM.render(olRef, document.getElementById("root"));
+    </script>
+  </body>
+</html>

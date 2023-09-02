@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        margin: 0;
+      }
+      #nav {
+        background-color: black;
+        height: 70px;
+        text-align: right;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      ul {
+        display: flex;
+        list-style-type: none;
+
+        justify-content: right;
+        align-items: center;
+        height: 100%;
+      }
+      li {
+        margin-right: 50px;
+      }
+    </style>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function Nav() {
+        var home = "Home";
+        return (
+          <div id="nav">
+            <ul>
+              <li>
+                <a href=""> {home} </a>
+              </li>
+              <li>
+                <a href=""> Profile </a>
+              </li>
+              <li>
+                <a href=""> Products </a>
+              </li>
+              <li>
+                <a href=""> Login </a>
+              </li>
+            </ul>
+          </div>
+        );
+      }
+
+      ReactDOM.render(Nav(), document.getElementById("root"));
+    </script>
+  </body>
+</html>
