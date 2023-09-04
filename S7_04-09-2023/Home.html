@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        margin: 0;
+      }
+      table {
+        margin: auto;
+        width: 1000px;
+        margin-bottom: 100px;
+      }
+      #card {
+        width: 300px;
+        box-shadow: 0 0 10px black;
+        padding: 10px;
+        margin: 50px auto;
+      }
+      #nav {
+        background-color: black;
+        height: 70px;
+        text-align: right;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      ul {
+        display: flex;
+        list-style-type: none;
+
+        justify-content: right;
+        align-items: center;
+        height: 100%;
+      }
+      li {
+        margin-right: 50px;
+      }
+      footer {
+        background-color: brown;
+        color: white;
+        padding: 50px;
+        text-align: center;
+        height: 170px;
+        margin-top: 30px;
+      }
+      footer h4 {
+        margin-top: 20px;
+        font-size: 22px;
+      }
+    </style>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      // 100 function 500 functions
+      function Nav() {
+        var home = "Home";
+        return (
+          <div id="nav">
+            <ul>
+              <li>
+                <a href=""> {home} </a>
+              </li>
+              <li>
+                <a href=""> Profile </a>
+              </li>
+              <li>
+                <a href=""> Products </a>
+              </li>
+              <li>
+                <a href=""> Login </a>
+              </li>
+            </ul>
+          </div>
+        );
+      }
+
+      function Card() {
+        return (
+          <div id="card">
+            <img
+              src="https://i.pinimg.com/originals/97/31/02/9731022f0be7c965e880505461643850.jpg"
+              width="300"
+              height="300"
+            />
+            <h2>Rajiv Mehta</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam
+              numquam suscipit amet provident minus voluptas placeat quas,
+              veniam laborum nisi!
+            </p>
+            <button>Profile</button>
+          </div>
+        );
+      }
+
+      function Footer() {
+        return (
+          <footer>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque
+              est ipsum incidunt recusandae nemo maiores, aperiam ratione
+              consequatur natus eos rem dicta ipsam illum? Inventore, dolor
+              optio nihil laudantium molestias sequi dolorum sit blanditiis
+              nostrum ullam vitae dolorem aspernatur repellat? Dolore aperiam
+              voluptatum, odio hic esse autem soluta reprehenderit! Aperiam
+              inventore laudantium similique quod natus. Culpa aliquam libero
+              sequi obcaecati delectus. Nisi blanditiis laudantium voluptates
+              iusto quaerat natus maxime. Architecto quos impedit repudiandae
+              quia ipsum veritatis aliquam eos voluptatibus eveniet amet aut
+              animi, omnis odio voluptates aspernatur dicta molestiae libero
+              natus nisi atque ex ducimus quidem deserunt. Expedita dolore, hic
+              rerum ducimus totam voluptatem? Commodi cumque sapiente ratione
+              magni sit voluptates impedit non provident eius quae consectetur
+              quidem velit adipisci id quo nulla rerum hic sequi, nesciunt fuga
+              dolor. Enim accusamus similique quam, rem eos unde laboriosam
+              laborum ipsa nulla. Architecto repellendus, vero aspernatur
+              aliquid magnam doloribus labore tempore voluptate.
+            </p>
+            <h4>All Rights Are Reserved By Kabir Sagar</h4>
+          </footer>
+        );
+      }
+
+      function Main() {
+        return (
+          <div>
+            <Nav />
+            <div style={{ display: "flex" }}>
+              <Card />
+
+              <Card />
+              <Card />
+            </div>
+            <Footer />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<Main />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
