@@ -12,8 +12,8 @@ function App() {
     <div className="App">
       <Nav />
       <Profile />
-      {/* <Header /> */}
-      {/* <div className="cardContainer">
+      <Header />
+      <div className="cardContainer">
         <Card
           name="Rahul Sharma"
           bgColor="lightgreen"
@@ -31,7 +31,7 @@ function App() {
           name="Arjun Singh"
           image="https://th.bing.com/th/id/R.75e489bb751d9979851e30104bfc1fe2?rik=3vMvBlHR%2b427FQ&riu=http%3a%2f%2fmahmutinsaat.com%2fwp-content%2fuploads%2f2015%2f06%2fteam-big-1.jpg&ehk=dkhc8%2byURP%2fDwPiI1wR7PX8Vs%2fyOvLIyrxwUW%2fKovJA%3d&risl=&pid=ImgRaw&r=0"
         />
-      </div> */}
+      </div>
     </div>
   );
 }
