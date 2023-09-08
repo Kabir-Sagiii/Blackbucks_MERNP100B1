@@ -1,0 +1,15 @@
+.User h2 {
+  color: green;
+}
+.User {
+  padding: 50px;
+}
+.User button {
+  margin-top: 10px;
+}
+.UserTable {
+  margin: 50px auto;
+}
+.radios {
+  margin-right: 30px;
+}

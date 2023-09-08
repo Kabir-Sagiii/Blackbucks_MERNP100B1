@@ -1,0 +1,9 @@
+https://fakestoreapi.com/products                                               :ALL
+
+https://fakestoreapi.com/products/category/jewelery                   : Jewelery
+
+https://fakestoreapi.com/products/category/electronics               : electronic
+
+https://fakestoreapi.com/products/category/men's clothing         : mens
+
+https://fakestoreapi.com/products/category/women's clothing    : womens
