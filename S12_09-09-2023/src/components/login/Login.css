@@ -1,0 +1,14 @@
+.Login {
+  width: 400px;
+  box-shadow: 0 0 10px black;
+  text-align: center;
+  padding: 50px;
+  margin: 10px auto;
+}
+.Login div {
+  margin-bottom: 13px;
+}
+#loginImg {
+  margin: 50px auto 0px;
+  text-align: center;
+}
