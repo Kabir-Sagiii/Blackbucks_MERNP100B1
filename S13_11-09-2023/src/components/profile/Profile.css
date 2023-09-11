@@ -1,0 +1,14 @@
+.Profile {
+  display: flex;
+  width: 1000px;
+  box-shadow: 0 0 10px black;
+  margin: 40px auto;
+  /* height: 350px; */
+}
+.profileImage {
+  width: 30%;
+}
+.profileDetails {
+  padding: 30px;
+  width: 70%;
+}

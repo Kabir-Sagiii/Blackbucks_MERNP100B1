@@ -1,0 +1,25 @@
+.Product {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  height: 100vh;
+  margin-top: 30px;
+}
+
+.category {
+  padding: 30px;
+}
+.category div {
+  margin-bottom: 20px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 30px;
+}
+.Card {
+  width: 300px;
+  padding: 10px;
+  box-shadow: 0 0 10px black;
+  text-align: center;
+}
