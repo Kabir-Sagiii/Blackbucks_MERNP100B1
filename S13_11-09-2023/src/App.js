@@ -24,11 +24,11 @@ function App() {
   return (
     <div className="App">
       {isLoggedin ? <Nav logout={setIsLoggedIn} /> : null}
-      <Profileclass />
+      {/* <Profileclass />
       <Userclass />
-      <Profileclass />
+      <Profileclass /> */}
       {/* <A /> */}
-      {/* <Routes>
+      <Routes>
         <Route
           path="/"
           element={isLoggedin ? <Home /> : <Login login={setIsLoggedIn} />}
@@ -72,7 +72,7 @@ function App() {
         />
         <Route path="/help" element={<h2>Help Component</h2>} />
         <Route path="*" element={<PageNotFound />} />
-      </Routes> */}
+      </Routes>
     </div>
   );
 }

@@ -1,0 +1,14 @@
+.formcontainer {
+  display: grid;
+  grid-template-columns: 40% 40%;
+}
+.Register {
+  width: 300px;
+  text-align: center;
+  margin: 30px auto;
+  box-shadow: 0 0 10px green;
+  padding: 10px 50px 50px;
+}
+.box {
+  margin-bottom: 13px;
+}

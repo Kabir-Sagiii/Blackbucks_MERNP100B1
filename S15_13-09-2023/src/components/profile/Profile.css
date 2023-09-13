@@ -1,0 +1,7 @@
+.Profile {
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 0 10px black;
+  margin: 50px auto;
+  background-color: lightgrey;
+}
